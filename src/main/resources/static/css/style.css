@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap');
+* {
+   margin: 0%;
+   padding: 0%;
+   box-sizing: border-box;
+    
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.container {
+    background-image: url("../img/logofundo.jpg");
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #ecf0f1;
+}
+.content{
+    background-color: #fff;
+    border-radius: 15px;
+    width: 960px;
+    height: 50%;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.content::before{
+    content: "";
+    position: absolute;
+    background-color: black;
+    width: 40%;
+    height: 100%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+
+    left: 0;
+}
+.title{
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.title-one{
+    color: #fff;
+}
+.title-two{
+    color: black;
+}
+.description{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 25px;
+}
+.description-one{
+    color: #fff;
+}
+.description-two{
+    color: #7f8c8d;
+}
+.btt{
+    border-radius: 15px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 10px;
+    padding: 10px 50px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 150px;
+    align-self: center;
+    border: none;
+    margin-top: 1rem;
+}
+.btt-one{
+    background-color: transparent;
+    border: 1px solid #fff;
+    transition: background-color .5s;
+}
+.btt-one:hover{
+    background-color: #fff;
+    color: black;
+}
+.btt-two{
+    background-color: black;
+    border: 1px solid black;
+    transition: background-color .5s;
+}
+.btt-two:hover{
+    background-color: #fff;
+    color: black;
+}
+.one-content{
+    display: flex;
+}
+.one-content .two-column{
+    z-index: 11;
+}
+.one-column{
+    text-align: center;
+    width: 40%;
+    z-index: 10;
+}
+.two-column{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+}
+.form input{
+    height: 45px;
+    width: 100%;
+    border: none;
+    background-color: #ecf0f1;
+}
+.label-input{
+    background-color: #ecf0f1;
+    display: flex;
+    align-items: center;
+    margin: 6px;
+}
+.icon-modify{
+    color: #7f8c8d;
+    padding: 0 6px;
+}
+
+/*second content*/
+
+.two-content {
+    position: absolute;
+    display: flex;
+}
+.two-content .one-column{
+    order: 2;
+    z-index: -1;
+}
+.two-content .two-column{
+    order: 1;
+    z-index: -1;
+}
+.password{
+    color: black;
+    font-size: 14px;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.sign-in-js .one-content .one-column,
+.sign-in-js .one-content .two-column{
+    z-index: -1;
+}
+
+
+.sign-in-js .two-content .two-column{
+    z-index: 11;
+}
+.sign-in-js .two-content .one-column{
+    z-index: 13;
+}
+
+.sign-in-js .content::before {
+    left: 60%;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    animation: slidein 1s;
+
+    z-index: 12;
+}
+.sign-up-js .content::before {
+    animation: slideup 1s;
+
+    z-index: 12;
+}
+
+.sign-up-js .two-content .one-column,
+.sign-up-js .two-content .two-column{
+    z-index: -1;
+}
+
+.sign-up-js .one-content .two-column{
+    z-index: 11;
+}
+.sign-up-js .one-content .one-column{
+    z-index: 13;
+}
+/*deslocamento css*/
+
+.sign-in-js .one-content .two-column{
+    z-index: -1;
+    position: relative;
+    animation: deslocamentoesq 1s;
+}
+.sign-up-js .two-content .two-column{
+    position: relative;
+    z-index: -1;
+    animation: deslocamentodir 1s;
+}
+
+/*animação css conteudo*/
+
+@keyframes deslocamentoesq {
+
+    from {
+        left: 0;
+        opacity: 1;
+        z-index: 12;
+    }
+    
+    25% {
+        left: -80px;
+        opacity: .5;
+    }
+    
+    50% {
+        left: -100px;
+        opacity: .2;
+    }
+    
+    
+    to {
+        left: -110px;
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+@keyframes deslocamentodir {
+
+    from {
+        left: 0;
+        z-index: 12;
+    }
+    
+    25% {
+        left: 80px;
+    }
+    
+    50% {
+        left: 100px;
+    }
+    
+    to {
+        left: 110px;
+        z-index: -1;
+    }
+
+}
+
+/*animação css*/
+
+@keyframes slidein {
+    from{
+        left: 0%;
+        width: 40%;
+    }
+    
+    25%{
+        left: 5%;
+        width: 50%;
+    }
+    
+    50%{
+        left: 25%;
+        width: 60%;
+    }
+    
+    75%{
+        left: 45%;
+        width: 50%;
+    }
+    
+    to {
+        left: 60%;
+        width: 40%;
+    }
+
+
+}
+
+@keyframes slideup {
+    from{
+        left: 60%;
+        width: 40%;
+    }
+    
+    25%{
+        left: 45%;
+        width: 50%;
+    }
+    
+    50%{
+        left: 25%;
+        width: 60%;
+    }
+    
+    75%{
+        left: 5%;
+        width: 50%;
+    }
+    
+    to {
+        left: 0%;
+        width: 40%;
+    }
+
+
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/b936971710.js" crossorigin="anonymous"></script>
+
+<body>
+    <div class="container">
+        <div class="content one-content">
+            <div class="one-column">
+                <h2 class="title title-one">Seja Bem Vindo</h2>
+                <p class="description description-one">A Central BookCenter</p>
+                <p class="description description-one">Faça o cadastro antes de fazer o login</p>
+                <p class="description description-one">Utilize suas informações pessoais</p>
+                <button id="signin" class="btt btt-one">sign in</button>
+            </div>
+            <div class="two-column">
+                <h2 class="title title-two">Crie sua Conta</h2>
+                <p class="description description-two">Ou utilize o email para se registrar:</p>
+                <form   class="form" method="post" action="/index/cadastro">
+                    <label class="label-input" for="">
+                        <i class="far fa-user icon-modify"></i>
+                        <input type="text" placeholder="Nome" name="nome">
+                    </label>
+                    <label class="label-input" for="">
+                        <i class="far fa-envelope icon-modify"></i>
+                        <input type="email" placeholder="Email" name="email">
+                    </label>
+                    <label class="label-input" for="">
+                        <i class="fas fa-lock icon-modify"></i>
+                        <input type="password" placeholder="Senha" name="senha">
+                    </label>
+                    <button  class="btt btt-two" type="submit">sign up</button>
+                </form>
+            </div>
+        </div>
+        <div class="content two-content">
+            <div class="one-column">
+                <h2 class="title title-one">Ola, Amigo</h2>
+                <p class="description description-one">Seja bem vindo</p>
+                <p class="description description-one">Insira aqui suas informações para entrar</p>
+                <p class="description description-one">Tenha uma boa estadia em nosso sistema</p>
+                <button id="signup" class="btt btt-one">sign up</button>
+            </div>
+            <div class="two-column">
+                <h2 class="title title-two">Faça o Login abaixo:</h2>
+                <p class="description description-two">Ou utilize o email para entrar:</p>
+                <form class="form" method="post" action="/index">
+                    <label class="label-input" for="">
+                        <i class="far fa-envelope icon-modify"></i>
+                        <input type="email" placeholder="Email" name="email">
+                    </label>
+                    <label class="label-input" for="">
+                        <i class="fas fa-lock icon-modify"></i>
+                        <input type="password" placeholder="Senha" name="senha">
+                    </label>
+                    <a class="password" href="#">Esqueceu sua senha?</a>
+                    <button class="btt btt-two" type="submit">sign in</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+
+</head>
+
+</html>
