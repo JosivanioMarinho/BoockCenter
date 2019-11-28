@@ -1,0 +1,151 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="css/bootstrapCadastroLivro.min.css" />
+    <link rel="stylesheet" type="text/css" href="/css/styleCadastroLivro.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <title>Cadastro BookCenter</title>
+</head>
+
+<body>
+    <header class="home-page">
+        <main>
+            <div class="header-1">
+                <div class="logomarca">
+                    <img src="/img/tclogo.PNG" />
+                </div>
+            </div>
+        </main>
+    </header>
+    <main class="col-100 menu-urls">
+        <div class="header-2">
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="/home">Home</a>
+                    </li>
+                    <li>
+                        <a href="">Sobre Nós</a>
+                    </li>
+                    <li>
+                        <a href="">Livros Novos e Usados</a>
+                    </li>
+                    <li>
+                        <a href="">Suporte</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="pesquisa">
+                <input placeholder="Busque Aqui" type="text" />
+            </div>
+        </div>
+    </main>
+    <div class="col-100 bloco-1">
+        <div class="content" style="float: none;">
+            
+        </div>
+    </div>
+    <div class="col-100 bloco-imagens-texto">
+        <div class="content" style="float: none;">
+			<div class="text-cad">
+				<div class="tt">
+					<h1>
+						<strong>CADASTRO PRODUTOS</strong>
+					</h1>
+				</div>
+				<div class="pp">
+					<p>Cadastre abaixo com as informações do seu produto.</p>
+				</div>
+
+				<div>
+					<form class="form" method="post" action="/cadastroLivro">
+						<div class="bloco-1img">
+							<img src="/img/tcbk.jpeg">
+						</div>
+						<div class="nome">
+							<input placeholder="Nome" type="text" name="nome" required/>
+						</div>
+						<div class="categoria">
+							<input placeholder="Categoria" type="text" name="categoria" required/>
+						</div>
+						<div class="genero">
+							<input placeholder="Genero" type="text" name="genero" required/>
+						</div>
+						<div class="preco">
+							<input placeholder="Preço" type="number" name="preco" required/>
+						</div>
+						<div class="autor">
+							<input placeholder="Autor" type="text" name="autor" required/>
+						</div>
+						<div class="select-img">
+							<input placeholder="" type="file" name="" /><br> <br>
+							<br>
+						</div>
+						<button type="submit" class="btn btn-dark">CADASTRAR</button>
+					</form>
+				</div>
+			</div>
+			</div>
+    </div>
+    <div class="col-100 bloco-logos">
+        <div class="content">
+            <div class="col-4">
+                <img alt="Games" title="Games" src="/img/tcicon-1.png" />
+            </div>
+            <div class="col-4">
+                <img alt="DComics" title="DComics" src="/img/tcicon-2.png" />
+            </div>
+            <div class="col-4">
+                <img alt="Marvel" title="Marvel" src="/img/tcicon-3.png" />
+            </div>
+            <div class="col-4">
+                <img alt="Star Wars" title="Star Wars" src="/img/tcicon-4.png" />
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="col-100 footer">
+            <div class="content">
+                <div class="col-4 f-1">
+                    <h5><b>Publicação</b></h5>
+                    <div class="ptext-1">
+                        <p>Nosso site entrará ao ar em dezembro XD!</p>
+                    </div>
+                </div>
+                <div class="col-4 f-2">
+                    <h5><b>Tags</b></h5>
+                    <div class="ptext-2">
+                        <p>Livros,Hqs,multimidia e muito mais.</p>
+                    </div>
+                </div>
+                <div class="col-4 f-3">
+                    <h5><b>Um pouco sobre nós</b></h5>
+                    <div class="ptext-3">
+                        <p>Livros,Hqs,multimidia e muito mais.</p>
+                    </div>
+                </div>
+                <div class="col-4 f-4">
+                    <h5><b>Entrar em contato</b></h5>
+                    <div class="ptext-4">
+                        <p>Acesse o nosso site e clique na aba "entrar em contato" la em cima.</p>
+                    </div>
+                    <div class="ptext-5">
+                        <p class="local">Caruaru, PE</p>
+                    </div>
+                    <div class="ptext-6">
+                        <p class="telefone">0800-100-2365</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="col-100 footer-2">
+        <div class="content">
+            <p>
+                @ 2019 web world
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

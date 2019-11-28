@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 
 <head>
     <meta charset="UTF-8">
@@ -19,26 +21,30 @@
                 <p class="description description-one">Utilize suas informações pessoais</p>
                 <button id="signin" class="btt btt-one">sign in</button>
             </div>
-            <div class="two-column">
-                <h2 class="title title-two">Crie sua Conta</h2>
-                <p class="description description-two">Ou utilize o email para se registrar:</p>
-                <form   class="form" method="post" action="/index/cadastro">
-                    <label class="label-input" for="">
-                        <i class="far fa-user icon-modify"></i>
-                        <input type="text" placeholder="Nome" name="nome">
-                    </label>
-                    <label class="label-input" for="">
-                        <i class="far fa-envelope icon-modify"></i>
-                        <input type="email" placeholder="Email" name="email">
-                    </label>
-                    <label class="label-input" for="">
-                        <i class="fas fa-lock icon-modify"></i>
-                        <input type="password" placeholder="Senha" name="senha">
-                    </label>
-                    <button  class="btt btt-two" type="submit">sign up</button>
-                </form>
-            </div>
-        </div>
+
+			<div class="two-column">
+			
+				<h2 class="title title-two">Crie sua Conta</h2>
+
+				<form class="form" method="post"  action="/index/cadastro">
+				
+				<div th:text="${mensagem}"
+				  th:if="${not #strings.isEmpty(mensagem)}"></div>
+				  
+					<label class="label-input" for=""> <i
+						class="far fa-user icon-modify"></i> <input type="text"
+						placeholder="Nome" name="nome" required>
+					</label> <label class="label-input" for=""> <i
+						class="far fa-envelope icon-modify"></i> <input type="email"
+						placeholder="Email" name="email" required>
+					</label> <label class="label-input" for=""> <i
+						class="fas fa-lock icon-modify"></i> <input type="password"
+						placeholder="Senha" name="senha" required>
+					</label>
+					<button class="btt btt-two" type="submit">sign up</button>
+				</form>
+			</div>
+		</div>
         <div class="content two-content">
             <div class="one-column">
                 <h2 class="title title-one">Ola, Amigo</h2>
@@ -49,15 +55,19 @@
             </div>
             <div class="two-column">
                 <h2 class="title title-two">Faça o Login abaixo:</h2>
-                <p class="description description-two">Ou utilize o email para entrar:</p>
+                
                 <form class="form" method="post" action="/index">
+                
+                <div th:text="${mensagem}"
+				  th:if="${not #strings.isEmpty(mensagem)}"></div>
+                
                     <label class="label-input" for="">
                         <i class="far fa-envelope icon-modify"></i>
-                        <input type="email" placeholder="Email" name="email">
+                        <input type="email" placeholder="Email" name="email" required>
                     </label>
                     <label class="label-input" for="">
                         <i class="fas fa-lock icon-modify"></i>
-                        <input type="password" placeholder="Senha" name="senha">
+                        <input type="password" placeholder="Senha" name="senha" required>
                     </label>
                     <a class="password" href="#">Esqueceu sua senha?</a>
                     <button class="btt btt-two" type="submit">sign in</button>
