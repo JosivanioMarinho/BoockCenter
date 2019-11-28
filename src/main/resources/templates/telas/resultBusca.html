@@ -17,11 +17,14 @@
 	<div th:each="livro : ${livros}">
 	
 	<div class="row">
+		
 	     <p><span th:text="${livro.nome}"></span></p>
 	     <p><span th:text="${livro.categoria}"></span></p>
 	     <p><span th:text="${livro.genero}"></span></p>
 	     <p><span th:text="${livro.autor}"></span></p>
 	     <p><span th:text="${livro.preco}"></span></p>
+	     <p><span th:text="${livro.autor}"></span></p>
+	     <img th:src="${livro.img}" />
 	</div>
 	
 	</div>

@@ -58,7 +58,7 @@
 				</div>
 
 				<div>
-					<form class="form" method="post" action="/cadastroLivro">
+					<form class="form" method="post" action="/cadastroLivro" enctype="multipart/form-data">
 						<div class="bloco-1img">
 							<img src="/img/tcbk.jpeg">
 						</div>
@@ -77,8 +77,9 @@
 						<div class="autor">
 							<input placeholder="Autor" type="text" name="autor" required/>
 						</div>
+	
 						<div class="select-img">
-							<input placeholder="" type="file" name="" /><br> <br>
+							<input placeholder="Selecione a Imagem"	 type="file" name="file" /><br> <br>
 							<br>
 						</div>
 						<button type="submit" class="btn btn-dark">CADASTRAR</button>

@@ -36,7 +36,7 @@ public class Llivro implements Serializable {
 	
 	private int quantidade;
 	
-	private byte file;
+	private String img;
 	
 	public long getId() {
 		return id;
@@ -86,11 +86,13 @@ public class Llivro implements Serializable {
 	public void setQuantidade(int quantidade) {
 		this.quantidade = quantidade;
 	}
-	public byte getFile() {
-		return file;
+	public String getImg() {
+		return img;
 	}
-	public void setFile(byte file) {
-		this.file = file;
+	public void setImg(String img) {
+		this.img = img;
 	}
+
+
 	
 }
